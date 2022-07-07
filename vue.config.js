@@ -1,11 +1,11 @@
 module.exports = {
-  chainWebpack: config => {
+  chainWebpack: (config) => {
     config.module
-      .rule('raw')
+      .rule("raw")
       .test(/\.(glsl|txt)$/)
-      .use('raw-loader')
-      .loader('raw-loader')
-      .end()
+      .use("raw-loader")
+      .loader("raw-loader")
+      .end();
   },
-  publicPath: "/webgl-cellular-automata/"
-}
+  publicPath: "/",
+};
